@@ -1,0 +1,88 @@
+/*Sobre nosotros*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Raleway";
+    background: linear-gradient(180deg, #fd9eff, #fd9eff 50%, #fff 50%, #fff 100%);
+}
+
+.historia{
+    text-align: center;
+    margin-top: 4em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 4em;
+}
+
+.historia h1{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.reason{
+    width: 13em;
+    margin-left: 5em;
+}
+.reason div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 13em;
+    width: 100%;
+    padding: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    border-radius: 20em;
+    background-color: gainsboro;
+}
+
+.reason .parr1 p{
+    margin: .5em;
+}
+
+.reason .parr2 p{
+    margin: .5em;
+}
+.reason .imgP{
+    height: 4em;
+}
+
+@media screen and (min-width: 700px) {
+    .reason {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 20em;
+        margin-left: auto;
+    }
+    .reason div{
+        margin-top: 2.5em;
+        margin-right: 2em;
+        margin-left: 2em;
+        height: 15em;
+    }
+
+    .reason .parr1 p{
+        margin: .5em;
+    }
+    
+    .reason .parr2 p{
+        margin: .5em;
+    }
+    .reason .imgP{
+        height: 6em;
+    }
+}

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Raleway";
+    background: linear-gradient(180deg, #fd9eff, #fd9eff 50%, #fff 50%, #fff 100%);
+}
+
+.cuadro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 300px;
+    background-color: white;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    margin-top: 2em;
+}
+
+.cuadro h1{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: .7em;
+    cursor:default;
+    color: blueviolet;
+}
+
+.cuadro .cuadritos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    gap: .5em;
+    width: 50%;
+}
+
+.cuadro .cuadritos input {
+    padding: 10px 20px;
+    outline: none;
+    border-radius: .5em;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+}
+
+.btn {
+    display: inline-flex;
+    width: 8em;
+    height: 2em;
+    background: none;
+    color: blueviolet;
+    align-items: center;
+    justify-content: center;
+    font-family: "Raleway";
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: .5em;
+}
+
+.btn svg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	fill: none;
+}
+
+.btn rect {
+	width: 100%;
+	height: 100%;
+	stroke: blueviolet;
+	stroke-width: 4px;
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	transition: .6s ease all;
+}
+
+.btn:hover rect {
+	stroke-dashoffset: 0;
+}
+
+.cuadro a {
+    font-size: .7em;
+    color:#959595;
+    font-weight: 600;
+}
+
+@media (max-width: 477px) {
+
+    main{
+        min-height: 75vh;
+    }
+
+    .cuadro{
+        width: 100%;
+        height: 350px;
+    }
+
+    .cuadro .cuadritos {
+        gap:1em;
+        width: 80%;
+    }
+
+    .cuadro .cuadritos input {
+        padding: 10px 20px;
+    }
+}
