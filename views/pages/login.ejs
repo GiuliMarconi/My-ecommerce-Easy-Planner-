@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Planner-Mobile</title>
+    <link rel="stylesheet" href="/views/styles/index.css"/>
+    <link rel="stylesheet" href="/views/styles/main/login.css"/>
+    <link rel="stylesheet" href="/views/styles/footer.css"/>
+    <link rel="stylesheet" href="/views/styles/headerMobile.css"/>
+    <link rel="stylesheet" href="/views/assets/">
+
+</head>
+
+<body>
+    
+    <%- include ('../partials/header.ejs') %>
+        
+    <main>
+        <div class="cuadro">
+            <h1>Inicio de Sesión</h1>
+            
+            <div class="cuadritos">
+                <input type="text" placeholder="Correo electrónico">
+                <input type="password" placeholder="Contraseña">
+            </div>
+
+            <button class="btn">
+                <span>Iniciar sesión</span>
+                <svg>
+                    <rect x="0" y="0" fill="none"></rect>
+                </svg>
+            </button>
+
+            <a href="/views/pages/register.html">No tengo cuenta</a>
+        </div>
+    </main>
+    
+    <%- include ('../partials/footer.ejs') %>
+
+</body>
+</html>

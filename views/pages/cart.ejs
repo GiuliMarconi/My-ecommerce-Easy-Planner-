@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Planner-Mobile</title>
+    <link rel="stylesheet" href="/views/styles/index.css"/>
+    <link rel="stylesheet" href="/views/styles/main/cart.css"/>
+    <link rel="stylesheet" href="/views/styles/footer.css"/>
+    <link rel="stylesheet" href="/views/styles/headerMobile.css"/>
+    <link rel="stylesheet" href="/views/assets/">
+
+</head>
+
+<body>
+    
+    <%- include ('../partials/header.ejs') %>
+
+    <main>
+        <section id="cart" classs="section-p1">
+            <table width="%">
+                <thead>
+                    <tr>
+                        <td>Borrar</td>
+                        <td>Producto</td>
+                        <td>Nombre</td>
+                        <td>Precio</td>
+                        <td>Cantidad</td>
+                        <td>Subtotal</td>
+                    </tr>
+                </thead>         
+                <tbody>
+                    <tr>
+                        <td><a href="#"><img src="/views/assets/borrar.svg"></a></td>
+                        <td><img src="/views/assets/planner.jpeg" ></td>
+                        <td>Planner Mensual</td>
+                        <td>$1500</td>
+                        <td><input type="number" value="1"></td>
+                        <td>$1500</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#"><img src="/views/assets/borrar.svg"></a></td>
+                        <td><img src="/views/assets/planner.jpeg" ></td>
+                        <td>Planner Mensual</td>
+                        <td>$1500</td>
+                        <td><input type="number" value="1"></td>
+                        <td>$1500</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#"><img src="/views/assets/borrar.svg"></a></td>
+                        <td><img src="/views/assets/planner.jpeg" ></td>
+                        <td>Planner Mensual</td>
+                        <td>$1500</td>
+                        <td><input type="number" value="1"></td>
+                        <td>$1500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="cart-add" classs="section-p1">
+            <div id="cupon">
+                <h3>Agregar un cupón</h3>
+                <div>
+                    <input type="text" placeholder="Ingresa tu cupón">
+                    <button class="normal">Ingresar</button>
+                </div>
+            </div>
+            <div id="subtotal">
+                <h3>Total de tu compra</h3>
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>$1500</td>
+                    </tr>
+                    <tr>
+                        <td>Envío</td>
+                        <td>Gratis</td>
+                    </tr>
+                    <tr>
+                        <td><strong>TOTAL</strong></td>
+                        <td>$1500</td>
+                    </tr>
+                </table>
+                <button>Finalizar compra</button>
+            </div>
+        </section>
+    </main>
+    
+    <%- include ('../partials/footer.ejs') %>
+
+</body>
+</html>

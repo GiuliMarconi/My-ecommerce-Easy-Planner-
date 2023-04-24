@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Planner-Mobile</title>
+    <link rel="stylesheet" href="/views/styles/index.css"/>
+    <link rel="stylesheet" href="/views/styles/main/register.css"/>
+    <link rel="stylesheet" href="/views/styles/footer.css"/>
+    <link rel="stylesheet" href="/views/styles/headerMobile.css"/>
+    <link rel="stylesheet" href="/views/assets">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+</head>
+
+<body>
+
+   <%- include ('../partials/header.ejs') %>
+
+    <main>
+        <div class="cuadro">
+            <h1>Registro</h1>
+            <div class="cuadritos">
+                <div class="complete">
+                    <h3>Nombres</h3>
+                    <input type="text">
+                </div>
+                <div class="complete">
+                    <h3>Apellido</h3>
+                    <input type="text">
+                </div>
+                <div class="complete">
+                    <h3>Fecha de nacimiento</h3>
+                    <input type="date">
+                </div>
+                <div class="complete">
+                    <h3>Provincia</h3>
+                    <select name=slist>
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Buenos Aires Capital">Buenos Aires Capital</option>
+                        <option value="Catamarca">Catamarca</option>
+                        <option value="Chaco">Chaco</option>
+                        <option value="Chubut">Chubut</option>
+                        <option value="Cordoba">Cordoba</option>
+                        <option value="Corrientes">Corrientes</option>
+                        <option value="Entre Rios">Entre Rios</option>
+                        <option value="Formosa">Formosa</option>
+                        <option value="Jujuy">Jujuy</option>
+                        <option value="La Pampa">La Pampa</option>
+                        <option value="La Rioja">La Rioja</option>
+                        <option value="Mendoza">Mendoza</option>
+                        <option value="Misiones">Misiones</option>
+                        <option value="Neuquen">Neuquen</option>
+                        <option value="Rio Negro">Rio Negro</option>
+                        <option value="Salta">Salta</option>
+                        <option value="San Juan">San Juan</option>
+                        <option value="San Luis">San Luis</option>
+                        <option value="Santa Cruz">Santa Cruz</option>
+                        <option value="Santa Fe">Santa Fe</option>
+                        <option value="Santiago del Estero">Santiago del Estero</option>
+                        <option value="Tierra del Fuego">Tierra del Fuego</option>
+                        <option value="Tucuman">Tucuman</option>
+                    </select>
+                </div>
+                <div class="complete">
+                    <h3>Correo electrónico</h3>
+                    <input type="text">
+                </div>
+                <div class="complete">
+                    <h3>Contraseña</h3>
+                    <input type="password" name="password" autocomplete="current-password" required="" id="id_password">
+                    <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+                </div>
+                <div class="complete">
+                    <h3>Confirmar contraseña</h3>
+                    <input type="password" name="password" autocomplete="current-password" required="" id="id_password">
+                    <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+                </div>
+                <input type="checkbox" >
+            </div>
+
+            <button class="btn">
+                <span>Registrarme</span>
+                <svg>
+                    <rect x="0" y="0" fill="none"></rect>
+                </svg>
+            </button>
+
+        </div>
+    </main>
+
+    <%- include ('../partials/footer.ejs') %>
+
+</body>
+</html>

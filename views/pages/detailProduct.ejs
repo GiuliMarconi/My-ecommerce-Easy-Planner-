@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Planner-Mobile</title>
+    <link rel="stylesheet" href="/views/styles/index.css"/>
+    <link rel="stylesheet" href="/views/styles/main/detailProduct.css"/>
+    <link rel="stylesheet" href="/views/styles/footer.css"/>
+    <link rel="stylesheet" href="/views/styles/headerMobile.css"/>
+    <link rel="stylesheet" href="/views/assets/">
+
+</head>
+
+<body>
+    
+    <%- include ('../partials/header.ejs') %>
+
+    <main>
+
+        <div class="card">
+
+            <div class="imgBox">
+                <img src="/views/assets/detail-agenda.jpg" alt="agenda">
+            </div>
+
+            <div class="details">
+                <div class="title">
+                    <h3>Agenda 2023 A5</h3>
+                        <small>MINIMAL</small>
+                </div>
+
+                <div class="description">
+                    <h3>Description</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab totam quae atque ex laborum libero illo, magni magnam? Odit eum est ea magni tempore non sapiente iusto incidunt saepe quae?</p>
+                </div>
+
+                <div class="buy">
+                    <div class="price">
+                        <sup>$</sup>
+                        <span>1549.<small>99</small></span>
+                    </div>
+                    <div class="btn">
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <%- include ('../partials/footer.ejs') %>
+
+</body>
+</html>

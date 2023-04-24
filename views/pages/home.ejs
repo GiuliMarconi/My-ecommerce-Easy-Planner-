@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Planner</title>
+    <link rel="stylesheet" href="/views/styles/index.css"/>
+    <link rel="stylesheet" href="/views/styles/main/home.css"/>
+    <link rel="stylesheet" href="/views/styles/footer.css"/>
+    <link rel="stylesheet" href="/views/styles/headerMobile.css"/>
+    <link rel="stylesheet" href="/views/assets">
+
+</head>
+
+<body>
+    
+    <%- include ('../partials/header.ejs') %>
+    
+    <main>
+
+        <section class="productos" id="productos">
+            <div class="presentacion">
+                <div class="cajita1">
+                    <img src="/views/assets/agenda.jpg" alt="Imagen1">
+                    <a href="#agendas">Agendas</a> 
+                </div>
+                <div class="cajita2">
+                    <img src="/views/assets/pizarra.jpg" alt="Imagen2">
+                    <a href="#pizarras">Pizarras</a>
+                </div>
+                <div class="cajita3">
+                    <img src="/views/assets/planner.jpeg" alt="Imagen3">
+                    <a href="#planners">Planners</a>
+                </div>
+                <div class="cajita4">
+                    <img src="/views/assets/utiles.jpeg" alt="Imagen4">
+                    <a href="#utiles">Útiles</a>
+                </div>
+            </div>
+        </section> 
+    </main>
+    
+    <%- include ('../partials/footer.ejs') %>
+
+</body>
+</html>
